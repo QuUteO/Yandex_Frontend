@@ -1,55 +1,62 @@
+/* Устанавливаем минимальную ширину body в 850px, чтобы контент не сжимался слишком сильно */
 body {
   min-width: 850px;
 }
 
+/* Стили для заголовка первого уровня (h1) */
 h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 45px;
-  color: white;
-  font-family: William, serif;
-  font-weight: normal;
-  font-size: 31px;
-  font-style: italic;
-  text-transform: uppercase;
+  margin-top: 0;          /* Убираем внешний отступ сверху */
+  margin-bottom: 0;       /* Убираем внешний отступ снизу */
+  padding-top: 45px;      /* Добавляем внутренний отступ сверху 45px */
+  color: white;           /* Белый цвет текста */
+  font-family: William, serif; /* Устанавливаем шрифт William с запасным serif */
+  font-weight: normal;    /* Нормальная толщина шрифта (не жирный) */
+  font-size: 31px;        /* Размер шрифта 31px */
+  font-style: italic;     /* Курсивное начертание */
+  text-transform: uppercase; /* Преобразование текста в верхний регистр */
 }
 
+/* Стили для заголовка второго уровня (h2) */
 h2 {
-  margin-top: 0;
-  margin-bottom: 35px;
-  color: white;
-  font-family: Inter, sans-serif;
-  font-size: 31px;
-  text-transform: uppercase;
+  margin-top: 0;          /* Убираем внешний отступ сверху */
+  margin-bottom: 35px;    /* Добавляем внешний отступ снизу 35px */
+  color: white;           /* Белый цвет текста */
+  font-family: Inter, sans-serif; /* Устанавливаем шрифт Inter с запасным sans-serif */
+  font-size: 31px;        /* Размер шрифта 31px */
+  text-transform: uppercase; /* Преобразование текста в верхний регистр */
 }
 
+/* Стили для параграфов (p) */
 p {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: Inter, sans-serif;
-  text-align: center;
+  margin-top: 0;          /* Убираем внешний отступ сверху */
+  margin-bottom: 0;       /* Убираем внешний отступ снизу */
+  font-family: Inter, sans-serif; /* Устанавливаем шрифт Inter с запасным sans-serif */
+  text-align: center;     /* Выравнивание текста по центру */
 }
 
+/* Стили для изображений (img) */
 img {
-  width: 210px;
-  margin-bottom: 80px;
+  width: 210px;           /* Фиксированная ширина изображения 210px */
+  margin-bottom: 80px;    /* Внешний отступ снизу 80px */
 }
 
+/* Стили для div-контейнера */
 div {
-  width: 500px;
-  height: 500px;
-  margin: 0 auto 20px;
-  text-align: center;
-  background-color: deepskyblue;
-  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  width: 500px;           /* Фиксированная ширина 500px */
+  height: 500px;          /* Фиксированная высота 500px */
+  margin: 0 auto 20px;    /* Внешние отступы: сверху 0, по бокам auto (центрирование), снизу 20px */
+  text-align: center;     /* Выравнивание содержимого по центру */
+  background-color: deepskyblue; /* Цвет фона - голубой */
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); /* Градиентный фон от фиолетового к розовому */
 }
 
+/* Стили для заголовка третьего уровня (h3) */
 h3 {
-  margin: 0;
-  color: white;
-  font-family: Inter, sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+  margin: 0;              /* Убираем все внешние отступы */
+  color: white;           /* Белый цвет текста */
+  font-family: Inter, sans-serif; /* Устанавливаем шрифт Inter с запасным sans-serif */
+  font-weight: normal;    /* Нормальная толщина шрифта (не жирный) */
+  font-size: 16px;        /* Размер шрифта 16px */
+  line-height: 18px;      /* Высота строки 18px */
+  text-transform: uppercase; /* Преобразование текста в верхний регистр */
 }

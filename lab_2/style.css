@@ -47,7 +47,7 @@ div {
   margin: 0 auto 20px;    /* Внешние отступы: сверху 0, по бокам auto (центрирование), снизу 20px */
   text-align: center;     /* Выравнивание содержимого по центру */
   background-color: deepskyblue; /* Цвет фона - голубой */
-  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); /* Градиентный фон от фиолетового к розовому */
+  background-image:linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); /* Градиентный фон от фиолетового к розовому */
 }
 
 /* Стили для заголовка третьего уровня (h3) */

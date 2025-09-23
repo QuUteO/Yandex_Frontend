@@ -1,38 +1,108 @@
-body {
-  min-width: 850px;
+/* Устанавливаем всем элементам свойство box-sizing: border-box */
+* {
+  box-sizing: border-box;
 }
 
-/* Этот CSS-код устанавливает нулевые внешние отступы для элементов */
+/* Устанавливаем всем элементам свойства margin и font-weight: normal, font-size: 100% */
 body,
-h1 {
-  margin: 0;
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0; /* Убираем внешние отступы */
+  font-weight: normal; /* Устанавливаем нормальную толщину шрифта */
+  font-size: 100%; /* Устанавливаем размер шрифта 100% */
 }
 
-/*Родительский элемент, который устанавливает шрифт*/
+/* Устанавливаем минимальную ширину body в 850px, чтобы контент не сжимался слишком сильно */
 body {
-  font-family: 'Open Sans', Arial, sans-serif;
+  min-width: 850px; /* Устанавливаем минимальную ширину 850px, чтобы контент не сжимался слишком сильно */
+  font-family: 'Open Sans', Arial, sans-serif; /* Устанавливаем шрифт Open Sans с запасным Arial и sans-serif */
 }
 
-header {
-  height: 100vh;
-  text-align: center;
+/* Устанавливаем стили для заголовка */
+.header {
+  height: 100vh; /* Высота равна высоте viewport */
+  text-align: center; /* Выравнивание текста по центру */
   background-color: #eee;
-  background-image: url(https://code.s3.yandex.net/web-code/images/freetrack/03/cover.png);
-  background-position: center;
-  background-size: cover;
+  background-image: url(https://code.s3.yandex.net/web-code/images/freetrack/03/cover.png); /* Устанавливаем фоновое изображение */
+  background-position: center; /* Центрируем фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение, чтобы оно заполняло всю высоту */
 }
 
-h1 {
-  /* Отодвиньте заголовок на 270 пикселей вниз */
-  padding-top: 270px;
-  color: white;
-  font-weight: 800;
-  font-size: 74px;
-  text-transform: uppercase;
+/* Устанавливаем стили для заголовка */
+.header-title {
+  margin: auto; /* Центрируем заголовок */
+  color: white; /* Устанавливаем белый цвет текста */
+  font-weight: 800; /* Устанавливаем толщину шрифта 800 */
+  font-size: 74px; /* Устанавливаем размер шрифта 74px */
+  text-transform: uppercase; /* Преобразование текста в верхний регистр */
 }
 
-div {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(95 13 238 / 0.5);
+/* Устанавливаем стили для заголовка */
+.overlay {
+  display: flex; /* Используем flexbox для расположения элементов */
+  width: 100%; /* Ширина равна 100% */
+  height: 100%; /* Высота равна 100% */
+  background-color: rgb(95 13 238 / 0.5); /* Устанавливаем полупрозрачный цвет фона */
+}
+
+/* Устанавливаем стили для контента */
+.content {
+  width: 770px; /* Ширина равна 770px */
+  margin: 100px auto 50px; /* Внешние отступы: сверху 100px, по бокам auto (центрирование), снизу 50px */
+  font-size: 0; /* Убираем отступы между элементами */
+}
+
+/* Устанавливаем стили для карточки */
+.card {
+  display: inline-block; /* Используем inline-block для расположения элементов */
+  width: 360px; /* Ширина равна 360px */
+  margin-right: 50px; /* Внешние отступы: справа 50px */
+  margin-bottom: 50px; /* Внешние отступы: снизу 50px */
+  border: 1px solid black; /* Устанавливаем черную границу */
+  padding: 25px 25px 30px; /* Внутренние отступы: сверху 25px, справа и слева 25px, снизу 30px */
+  box-shadow: 4px 4px 0 black; /* Устанавливаем тень */
+}
+
+/* Устанавливаем стили для карточки */
+.no-right-margin {
+  margin: 0; /* Убираем внешние отступы справа */
+}
+
+/* Устанавливаем стили для заголовка карточки */
+.card-title {
+  margin-bottom: 10px; /* Внешние отступы: снизу 10px */
+  font-weight: 800; /* Устанавливаем толщину шрифта 800 */
+  font-size: 31px; /* Устанавливаем размер шрифта 31px */
+  text-align: center; /* Выравнивание текста по центру */
+  text-transform: uppercase; /* Преобразование текста в верхний регистр */
+}
+
+/* Устанавливаем стили для текста карточки */
+.card-text {
+  font-size: 18px; /* Устанавливаем размер шрифта 18px */
+}
+
+/* Устанавливаем стили для изображения карточки */
+.card-image {
+  width: 100%; /* Ширина равна 100% */
+  margin-bottom: 20px; /* Внешние отступы: снизу 20px */
+  border: 1px solid black; /* Устанавливаем черную границу */
+}
+
+/* Устанавливаем стили для футера */
+.footer {
+  display: flex; /* Используем flexbox для расположения элементов */
+  height: 200px; /* Высота равна 200px */
+  background-color: #5f0dee; /* Устанавливаем цвет фона #5f0dee */
+}
+
+/* Устанавливаем стили для автора футера */
+.footer-author {
+  margin: auto; /* Центрируем элемент */
+  color: white; /* Устанавливаем белый цвет текста */
+  font-weight: 800; /* Устанавливаем толщину шрифта 800 */
+  font-size: 25px; /* Устанавливаем размер шрифта 25px */
 }
